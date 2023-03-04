@@ -1,0 +1,43 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Here is one of many  CSS rules you will need... */
+div {
+    position: absolute;
+    width: 25%;
+    margin: 5px;
+    padding: 5px;
+}
+p {
+    text-align: center;
+}
+#one {
+    border: 5px green solid;
+    right: 10px;
+    bottom: 20%;
+}
+
+#two {
+    border: 5px red solid;
+    right: 10px;
+    top: 10%;
+}
+
+#three {
+    border: 5px blue solid;
+    left: 10px;
+    top: 10%;
+}
+
+#four {
+    border:5px orange solid;
+    left: 10px;
+    bottom: 20%;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color:green;
+}
