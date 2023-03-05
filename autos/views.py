@@ -57,7 +57,7 @@ class MakeUpdate(LoginRequiredMixin, View):
 
     def post(self, req, pk):
         make = get_object_or_404(self.model, pk=pk)
-        form = MakeForm(instance=make)
+        form = MakeForm(req.POST ,instance=make)
         if not form.is_valid():
             ctx = {'form': form}
             return render(req, self.template, ctx)
