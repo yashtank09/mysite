@@ -28,6 +28,7 @@ urlpatterns = [
     path('', views.TemplateView.as_view(template_name='home/main.html')),
     path('accounts/', include('django.contrib.auth.urls')), # Django built-in login feature
     path('autos/', include('autos.urls')), # autos app
+    path('cats/', include('cats.urls')), # autos app
     path('form/', include('form.urls')), # form app
     path('polls/', include('polls.urls')), # polls app
     re_path(r'^site/(?P<path>.*)$', serve, {'document_root': SITE_ROOT, 'show_indexes': True}, name='site_path'),
